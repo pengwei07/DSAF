@@ -12,11 +12,11 @@ The datasets utilized in this study are derived from the European Centre for Med
 
 ## Code Usage Instructions
 
-- Data processing: `data_processing/EC_data_processing/ERA5.py` and `data_processing/EC_data_processing/HRES.py`
+- Data processing: `data_processing/ERA5.py` and `data_processing/HRES.py`
 
-- 2x task: `DSAF/2x_task/main.py`
+- 2x task: `2x_task/main.py`
 
-- 4x task: `DSAF/4x_task/main.py`
+- 4x task: `4x_task/main.py`
 
 ## Appendix
 In this work, we approximate the $\nabla$ operator of different orders using the fourth-order different difference operator, corresponding to the $5\times5$ convolution kernel, thus representing $Loss_{reg}$. The $Loss_{reg}$ is obtained in `DSAF/2x_task/train.py` for the 2x task and `DSAF/4x_task/train.py` for the 4x task. The $Loss_{reg}$ is defined as
