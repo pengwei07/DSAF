@@ -3,8 +3,11 @@
 **Abstract**\
 While widely recognized as one of the most substantial weather forecasting methodologies, Numerical Weather Prediction (NWP) usually suffers from relatively coarse resolution and inevitable bias due to tempo-spatial discretization, physical parametrization process, and computation limitation. With the roaring growth of deep learning-based techniques, we propose the **D**ual-**S**tage **A**daptive **F**ramework (**DSAF**), a novel framework to address regional NWP downscaling and bias correction tasks. DSAF uniquely incorporates adaptive elements in its design to ensure a flexible response to evolving weather conditions. Specifically, NWP downscaling and correction are well-decoupled in the framework and can be applied independently, which strategically guides the optimization trajectory of the model. Utilizing a multi-task learning mechanism and an uncertainty-weighted loss function, DSAF facilitates balanced training across various weather factors. Additionally, our specifically designed attention-centric learnable module effectively integrates geographic information, proficiently managing complex interrelationships. Experimental validation on the ECMWF operational forecast (HRES) and reanalysis (ERA5) archive demonstrates DSAF's superior performance over existing state-of-the-art models and shows substantial improvements when existing models are augmented using our proposed modules.
 
-**[Paper](https://arxiv.org/pdf/2312.12476.pdf)**
+**[Paper](https://arxiv.org/pdf/2312.12476.pdf)** (Please click)
 
+![DSAF](fig/DSAF.png)
+
+**Figure 1**: (a) and (b) Comparison of Correction, pure Downscaling and Our Tasks for 2m Temperature: Illustration of specific differences in $4\times$ and $2\times$ downscaling. NWP and Real denote HRES and ERA5 reanalysis data, respectively. HR signifies 0.25-degree resolution data, while $2\times\downarrow$ and $4\times\downarrow$ represent data at 0.5-degree and 1-degree resolutions, respectively. (c) Architectural overview of DSAF. (d) Heat maps of correlation matrices for diverse weather factors at Points No.1, No.2, and No.3. Warm colors indicate strong correlations, while cool colors represent weak ones. (e) Spatial and topographical characteristics of Points No.1, No.2, and No.3. Highlighting contrast between valley (Point No.1) and plain locations (Points No.2 and No.3).
 
 
 ## Data
