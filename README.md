@@ -3,7 +3,7 @@
 **Abstract**\
 While widely recognized as one of the most substantial weather forecasting methodologies, Numerical Weather Prediction (NWP) usually suffers from relatively coarse resolution and inevitable bias due to tempo-spatial discretization, physical parametrization process, and computation limitation. With the roaring growth of deep learning-based techniques, we propose the **D**ual-**S**tage **A**daptive **F**ramework (**DSAF**), a novel framework to address regional NWP downscaling and bias correction tasks. DSAF uniquely incorporates adaptive elements in its design to ensure a flexible response to evolving weather conditions. Specifically, NWP downscaling and correction are well-decoupled in the framework and can be applied independently, which strategically guides the optimization trajectory of the model. Utilizing a multi-task learning mechanism and an uncertainty-weighted loss function, DSAF facilitates balanced training across various weather factors. Additionally, our specifically designed attention-centric learnable module effectively integrates geographic information, proficiently managing complex interrelationships. Experimental validation on the ECMWF operational forecast (HRES) and reanalysis (ERA5) archive demonstrates DSAF's superior performance over existing state-of-the-art models and shows substantial improvements when existing models are augmented using our proposed modules.
 
-**[Paper](https://arxiv.org/pdf/2312.12476.pdf)** (Please click)
+**[Paper](https://arxiv.org/pdf/2312.12476.pdf)**
 
 ![DSAF](fig/DSAF.png)
 
